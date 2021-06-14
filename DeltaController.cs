@@ -4,14 +4,14 @@ using Microsoft.FeatureManagement.Mvc;
 
 namespace TestFeatureFlags.Controllers
 {
-    public class BetaController: Controller
+    public class DeltaController: Controller
     {
         private readonly IFeatureManager _featureManager;
 
-        public BetaController(IFeatureManagerSnapshot featureManager) =>
+        public DeltaController(IFeatureManagerSnapshot featureManager) =>
             _featureManager = featureManager;
 
-        [FeatureGate(MyFeatureFlags.Beta)]
+        [FeatureGate(MyFeatureFlags.Delta)]
         public IActionResult Index() => View();
     }
     

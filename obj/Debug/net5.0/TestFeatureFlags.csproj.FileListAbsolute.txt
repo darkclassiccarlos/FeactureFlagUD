@@ -48,3 +48,4 @@ C:\Users\cbautista\TestFeatureFlags\obj\Debug\net5.0\TestFeatureFlags.dll
 C:\Users\cbautista\TestFeatureFlags\obj\Debug\net5.0\ref\TestFeatureFlags.dll
 C:\Users\cbautista\TestFeatureFlags\obj\Debug\net5.0\TestFeatureFlags.pdb
 C:\Users\cbautista\TestFeatureFlags\obj\Debug\net5.0\TestFeatureFlags.genruntimeconfig.cache
+C:\Users\cbautista\TestFeatureFlags\obj\Debug\net5.0\Razor\Views\Delta\Index.cshtml.g.cs
