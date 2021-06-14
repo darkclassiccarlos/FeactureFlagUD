@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj": {}
+    "C:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj": {}
   },
   "projects": {
-    "c:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj": {
+    "C:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj",
+        "projectUniqueName": "C:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj",
         "projectName": "TestFeatureFlags",
-        "projectPath": "c:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj",
+        "projectPath": "C:\\Users\\cbautista\\TestFeatureFlags\\TestFeatureFlags.csproj",
         "packagesPath": "C:\\Users\\cbautista\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\cbautista\\TestFeatureFlags\\obj\\",
+        "outputPath": "C:\\Users\\cbautista\\TestFeatureFlags\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cbautista\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Azure.AppConfiguration.AspNetCore": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Microsoft.FeatureManagement.AspNetCore": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
