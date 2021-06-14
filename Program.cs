@@ -15,12 +15,21 @@ namespace TestFeatureFlags
         {
             CreateHostBuilder(args).Build().Run();
         }
-
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+                    webBuilder.ConfigureAppConfiguration(config =>
+                    {
+                        var settings = config.Build();
+                        var connection = settings.GetConnectionString("AppConfig");
+                        config.AddAzureAppConfiguration(options =>
+                            options.Connect(connection).UseFeatureFlags());
+                    }).UseStartup<Startup>());
+     //   public static IHostBuilder CreateHostBuilder(string[] args) =>
+       //     Host.CreateDefaultBuilder(args)
+         //       .ConfigureWebHostDefaults(webBuilder =>
+           //     {
+             //       webBuilder.UseStartup<Startup>();
+                //});
     }
 }
